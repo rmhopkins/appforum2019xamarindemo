@@ -19,9 +19,25 @@ namespace MyMobileApp
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            MyLabel.Text = $"You entered: {EntryText.Text}";
+            if(!string.IsNullOrEmpty(EntryText.Text))
+            {
+                MyLabel.Text = $"You entered: {EntryText.Text}";
+                await TextToSpeech.SpeakAsync(EntryText.Text);
+            }
+        }
+
+        private async void Share_Clicked(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(EntryText.Text))
+            {
+                await Share.RequestAsync(new ShareTextRequest
+                {
+                    Text = EntryText.Text,
+                    Title = "Share Text"
+                });
+            }
         }
     }
 }

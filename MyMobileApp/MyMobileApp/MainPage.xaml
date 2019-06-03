@@ -4,13 +4,21 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="MyMobileApp.MainPage">
-
-    <StackLayout VerticalOptions="StartAndExpand">
-        <!-- Place new controls here -->
-        <Label Text="Hello World!" HorizontalOptions="Center" x:Name="MyLabel" />
-        <Entry Placeholder="Enter some text" x:Name="EntryText" />
-        <Button Text="Click me again!" Clicked="Button_Clicked" />
+             x:Class="MyMobileApp.MainPage"
+             Visual="Material">
+    <StackLayout>
+        <StackLayout.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <On Platform="Android, WinPhone">0,20,0,0</On>
+                <On Platform="iOS">0,50,0,0</On>
+            </OnPlatform>
+        </StackLayout.Padding>
+        <StackLayout VerticalOptions="StartAndExpand">
+            <!-- Place new controls here -->
+            <Label Text="Enter Some Text Below" HorizontalOptions="Center" x:Name="MyLabel" />
+            <Entry Placeholder="Enter some text" x:Name="EntryText" />
+            <Button Text="Click me!" Clicked="Button_Clicked" />
+            <Button Text="Share me!" Clicked="Share_Clicked" />
+        </StackLayout>
     </StackLayout>
-
 </ContentPage>
