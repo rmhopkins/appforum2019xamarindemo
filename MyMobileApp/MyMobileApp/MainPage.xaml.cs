@@ -14,8 +14,6 @@ using System.Collections.ObjectModel;
 
 namespace MyMobileApp
 {
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
@@ -54,10 +52,9 @@ namespace MyMobileApp
             {
                 people.Add(new Person
                 {
-                    Firstname = item.DeserializedValue.Firstname,
-                    Lastname = item.DeserializedValue.Lastname,
+                    Name = item.DeserializedValue.Name,
                     Email = item.DeserializedValue.Email
-                });
+                }); 
             }
         }
     }

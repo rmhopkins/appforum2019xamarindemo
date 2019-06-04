@@ -23,7 +23,7 @@
             <ListView x:Name="PeopleList">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Firstname}" Detail="{Binding Email}" />
+                        <TextCell Text="{Binding Name}" Detail="{Binding Email}" />
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
