@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Essentials;
+﻿using Microsoft.AppCenter.Data;
 using MyMobileApp.Models;
-using Microsoft.AppCenter;
-using Microsoft.AppCenter.Data;
-using Microsoft.AppCenter.Crashes;
+using System;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace MyMobileApp
 {
