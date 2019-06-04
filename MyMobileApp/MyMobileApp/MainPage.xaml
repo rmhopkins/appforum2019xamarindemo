@@ -17,8 +17,16 @@
             <!-- Place new controls here -->
             <Label Text="Enter Some Text Below" HorizontalOptions="Center" x:Name="MyLabel" />
             <Entry Placeholder="Enter some text" x:Name="EntryText" />
-            <Button Text="Click me!" Clicked="Button_Clicked" />
-            <Button Text="Share me!" Clicked="Share_Clicked" />
+            <Button Text="Click me" Clicked="Button_Clicked" />
+            <Button Text="Share me" Clicked="Share_Clicked" />
+            <Button Text="Get Contacts" Clicked="Contacts_Clicked" />
+            <ListView x:Name="PeopleList">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Firstname}" Detail="{Binding Email}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </StackLayout>
 </ContentPage>
