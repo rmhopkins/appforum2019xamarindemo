@@ -4,10 +4,10 @@ using System.Text;
 
 namespace MyMobileApp.Models
 {
+
     class Person
     {
         public string Name { get; set; }
         public string Email { get; set; }
-        public Guid Id { get; set; } = Guid.NewGuid();
     }
 }
