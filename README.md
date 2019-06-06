@@ -1,4 +1,5 @@
-# appforum2019xamarin
+# AppForum 2019 (Warsaw) Xamarin Enterprise Apps Presentation Code Sample
+
 After my presentation at AppForum 2019 Warsaw, Poland several I promised I would provide the codebase for the app in a public repo.
 
 This app is very simple in nature but demonstrates a number of basic principles:
