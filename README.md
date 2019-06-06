@@ -8,7 +8,7 @@ This app is very simple in nature but demonstrates a number of basic principles:
 * Text to Speech and Sharing dialog using Xamarin Essentials
 * App Center Data pulling data from Azure Cosmos DB to display in the app using just a few lines of code
 
-Note: you will need to add your own app secrets in the App.xaml.cs and pre-populate your Cosmos DB instance in order to fully run the app.  The readonly public collection created by App Center requires a simple json document structure as follows:
+Note: you will need to add your own app secrets in the App.xaml.cs.  The app secrets in this repo are no longer valid.  You will also need to pre-populate your Cosmos DB instance in order to fully run the app.  The readonly public collection created by App Center requires a simple json document structure as follows:
 
 ```
 {
